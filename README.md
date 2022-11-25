@@ -14,6 +14,14 @@ allows a planner to get insights into client and planning information.
 You will find the corresponding data that needs to be imported into the database
 in `planning.json`, which contains around 10k records.
 
+
+## Run instructions
+- create and activate virtual environment `virtualenv venv && source venv/bin/activate`
+- install dependencies `make install`
+- run `make populate` to populate database with `planning.json` file 
+- run application `make run`
+- Application will run on `http://0.0.0.0:8001` , swagger UI : `http://0.0.0.0:8001/docs`
+
 ## Requirements
 
 1. Create proper database tables that can fit the data model.

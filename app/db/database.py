@@ -12,4 +12,6 @@ Base = declarative_base()
 engine = create_engine(connection_string, echo=True)
 
 # create session instance for db query
-SessionLocal = scoped_session(sessionmaker(autocommit=False, autoflush=False, bind=engine))
+SessionLocal = scoped_session(
+    sessionmaker(autocommit=False, autoflush=False, bind=engine)
+)

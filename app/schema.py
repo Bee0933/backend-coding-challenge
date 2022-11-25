@@ -1,6 +1,8 @@
 # pylint: disable=no-name-in-module
 from pydantic import BaseModel, Field
 from datetime import datetime
+from fastapi_utils.enums import StrEnum
+from enum import auto
 
 
 # response model sechema
@@ -28,3 +30,16 @@ class planner(BaseModel):
 
     class Config:
         orm_mode = True
+
+
+# sort schema
+class sortOption(StrEnum):
+    asc = auto()
+    desc = auto()
+    NONE = auto()
+
+
+# filter schema
+class filterOption(StrEnum):
+    true = auto()
+    false = auto()

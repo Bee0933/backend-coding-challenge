@@ -1,3 +1,4 @@
+# pylint: disable=import-error
 from endpoints import router
 from fastapi import FastAPI
 import uvicorn
